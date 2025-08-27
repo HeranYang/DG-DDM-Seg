@@ -1,0 +1,102 @@
+{
+    "name": "DG-DDM-Seg for Abdominal",
+    "phase": "train", // train or val
+    "gpu_ids": [0],
+    "path": { //set the path
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint",
+        "resume_state": null
+        // "resume_state": null
+        // "resume_state": "experiments/Ours_v2 for MSCMRSeg_230730_183014_image_label/checkpoint/I64000_E2000"
+    },
+    "datasets": {
+        "train": {
+            "name": "train",
+            "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
+            "output_label_sequence":     "label", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pesudolabel_112/1", // the sequence to be generated
+            "dataroot": "dataset/CT_to_MR/train",
+            "thres": 0.9,
+            "randnum_pl": 112,
+            "nclass": 5,
+            "batch_size": 16,
+            "num_workers": 16,
+            "use_shuffle": true,
+            "data_len": -1 // -1 represents all data used in train
+        },
+        "val": {
+            "name": "valid_train",
+            "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
+            "output_label_sequence":     "label", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pesudolabel/1", // the sequence to be generated
+            "dataroot": "dataset/CT_to_MR/valid_train",
+            "thres": 0.9,
+            "randnum_pl": 1,
+            "nclass": 5,
+            "batch_size": 1,
+            "num_workers": 1,
+            "generation_root": "dataset/results",
+            "data_len": -1
+        }
+    },  // ==============================================================================================
+    "model": {
+        "diffusion_config":{
+            "content_seq_len": 36864,  // 192*192
+            "num_classes": 5,
+            "diffusion_step": 1000,
+            "auxiliary_loss_weight": 2.0e-3,
+            "adaptive_auxiliary_loss": false,
+            "mask_weight": [1,1], // the loss weight on mask region and non-mask region
+            "grid_size": 3,
+            "transformer_config":{
+                "n_layer": 14,
+                "n_embd": 256, // the dim of embedding dims
+                "n_head": 16,
+                "attn_pdrop": 0.0,
+                "resid_pdrop": 0.0,
+                "mlp_hidden_times": 4,
+                "block_activate": "GELU2",
+                "timestep_type": "adalayernorm"    // adainsnorm or adalayernorm and abs
+                },
+            "embed_opt":{
+                "img_size": 192,
+                "patch_size": 16,
+                "in_chans": 1,
+                "initconv_in_chans": 3,  // for image
+                "cond_in_chans": 12,  // for image
+                "embed_dim": 256,
+                "cond_embed_dim": 256,  // for image
+                "depth": 10,
+                "cond_depth": 10,  // for image
+                "num_heads": 16,
+                "mlp_ratio": 4.0,
+                "out_chans": 256,
+                "qkv_bias": true,
+                "use_rel_pos": true
+            }
+        }
+    }, // ==============================================================================================
+    "train": {
+        "n_iter": 1600000,
+        "n_epoch": 100000,
+        "val_freq": 500, // epoch
+        "save_checkpoint_freq": 500, //epoch
+        "print_freq": 500, //iter
+        "optimizer": {
+            "type": "torch.optim.AdamW",
+            "lr": 3e-6,
+            "betas": [0.9, 0.96],
+            "weight_decay": 4.5e-2
+        },
+        "ema_scheduler": { // not used now
+            "step_start_ema": 5000,
+            "update_ema_every": 1,
+            "ema_decay": 0.9999
+        }
+    }, // ==============================================================================================
+    "wandb": {
+        "project": "DG-DDM-Seg for Abdominal"
+    } // ==============================================================================================
+}
