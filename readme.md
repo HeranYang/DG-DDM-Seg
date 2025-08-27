@@ -3,6 +3,7 @@ This repository is the official PyTorch implementation of the paper "Domain-Gene
 
 
 
+
 ## Overview
 
 <div align=center>
@@ -28,6 +29,7 @@ The folder structure of our implementation is:
 
 
 
+
 ## Requirements
 All experiments utilize the PyTorch library. We recommend the following package versions:
 * python==3.9
@@ -39,6 +41,7 @@ All experiments utilize the PyTorch library. We recommend the following package 
 * tensorboardX
 * scipy
 * numpy==1.24.0
+
 
 
 
@@ -68,11 +71,11 @@ Note that the codes for these three tasks are identical except for the hyper-par
 The structure of our code folder is: 
 (here we take abdominal_ct2mr as example)
 
-    abdominal_ct2mr\           : code of Hyper-GAE for multi-modal MR image synthesis
+    abdominal_ct2mr\            : code of DG-DDM-Seg for cross-modality abdominal segmentation
           config\
-                |-- our_train.json
-                |-- our_valid_mp.json
-                |-- our_test_mp.json
+                |-- our_train.json            : code of training setting
+                |-- our_valid_mp.json         : code of validation setting
+                |-- our_test_mp.json          : code of test setting
           core\
                 |-- logger.py
                 |-- metrics.py
@@ -98,9 +101,9 @@ The structure of our code folder is:
                 |-- __init__.py
                 |-- model.py
                 |-- networks.py
-          |-- our_train.py
-          |-- our_valid_mp.py         : main function
-          |-- our_test_mp.py        : code of building model, and train/valid/test
+          |-- our_train.py            : code of training model
+          |-- our_valid_mp.py         : code of model validation
+          |-- our_test_mp.py          : code of testing model
 
 
 
@@ -111,27 +114,28 @@ Our code can be trained using the following commond:
 
     python our_train.py -p train -c config/our_train.json
 
+If you want to continue train the model, you could modify the "resume_state" value in our_train.json to be the newest checkpoint path, and then run the commond above.
+
 
 ### Validation
 
-Before starting the validation process, you may need to modify the information about valid set and epoch in valid function within model.py.
-Then, the validation process can be conducted using the following commond:
+The validation process can be conducted using the following commond:
 
     python our_valid_mp.py -p val -c config/our_valid_mp.json
     
-After generating the validation results, you could select the optimal epoch_id based on the performance on validation set.
+After generating the validation results, you could select the optimal checkpoint based on the performance on validation set.
 
 
 ### Test
 
-Before starting the test process, you need to set the epoch as the selected optimal epoch_id in test function within model.py.
+Before starting the test process, you need to modify the "resume_state" value in our_test_mp.json to be the optimal checkpoint path.
 Then, you can generate the test results using the following commond:
 
     python our_test_mp.py -p val -c config/our_test_mp.json
 
 
 ### About Trained Model
-We have also uploaded our trained DG-DDM-Seg models, and one can directly use them for cross-domain image segmentation tasks. Due to the restriction of github, the trained models are uploaded to the [Google Drive](???).
+We have also uploaded our trained DG-DDM-Seg models in the three cross-domain segmentation tasks mentioned above, and one can directly use them for cross-domain image segmentation. Due to the restriction of github, the trained models are uploaded to the [Google Drive](???).
 
 
 
@@ -148,3 +152,4 @@ If you find this code useful for your research, please cite our paper:
 
 ## Reference
 
+... to be continued ...
