@@ -44,13 +44,18 @@ All experiments utilize the PyTorch library. We recommend the following package 
 
 ## Dataset
 
-<to be continued>
+... to be continued ...
+
 
 ### Data Preprocessing
 
+... to be continued ...
 
 
 ### Data Folder Structure
+
+... to be continued ...
+
 
 
 
@@ -58,7 +63,10 @@ All experiments utilize the PyTorch library. We recommend the following package 
 ## Usage
 
 We provide the codes of our DG-DDM-Seg respectively for cross-modality abdominal segmentation, cross-sequence cardiac segmentation, and cross-site prostate segmentation.
-The structure of our code folder is:
+Note that the codes for these three tasks are identical except for the hyper-parameters.
+
+The structure of our code folder is: 
+(here we take abdominal_ct2mr for example)
 
     abdominal_ct2mr\           : code of Hyper-GAE for multi-modal MR image synthesis
           config\
