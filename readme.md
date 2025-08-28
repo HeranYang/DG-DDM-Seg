@@ -69,38 +69,38 @@ The structure of our code folder is:
 (here we take abdominal_ct2mr as example)
 
     abdominal_ct2mr\            : code of DG-DDM-Seg for cross-modality abdominal segmentation
-          config\
-                |-- our_train.json            : code of training setting
-                |-- our_valid_mp.json         : code of validation setting
-                └-- our_test_mp.json          : code of test setting
-          core\
-                |-- logger.py
-                |-- metrics.py
-                └── wandb_logger.py
-          data\
-                |-- __init__.py
-                |-- image_transforms.py
-                |-- location_scale_augmentation.py
-                |-- MRI_dataset.py
-                |-- prepare_data.py
-                |-- saliency_balancing_fusion.py
-                |-- transform_utils.py
-                └── util.py
-          model\
-                basic_modules\
-                      |-- clip_grad_norm.py
-                      |-- common.py
-                      └── misc.py
-                vqdm_modules\
-                      |-- diffusion_transformer.py
-                      |-- embedding.py
-                      └── transformer_utils.py
-                |-- __init__.py
-                |-- model.py
-                └── networks.py
-          |-- our_train.py            : code of training model
-          |-- our_valid_mp.py         : code of model validation
-          └── our_test_mp.py          : code of testing model
+            |-- config\
+            |        |-- our_train.json            : code of training setting
+            |        |-- our_valid_mp.json         : code of validation setting
+            |        |-- our_test_mp.json          : code of test setting
+            |-- core\
+            |        |-- logger.py
+            |        |-- metrics.py
+            |        |-- wandb_logger.py
+            |-- data\
+            |        |-- __init__.py
+            |        |-- image_transforms.py
+            |        |-- location_scale_augmentation.py
+            |        |-- MRI_dataset.py
+            |        |-- prepare_data.py
+            |        |-- saliency_balancing_fusion.py
+            |        |-- transform_utils.py
+            |        |-- util.py
+            |-- model\
+            |        |-- basic_modules\
+            |        |        |-- clip_grad_norm.py
+            |        |        |-- common.py
+            |        |        |-- misc.py
+            |        |-- vqdm_modules\
+            |        |        |-- diffusion_transformer.py
+            |        |        |-- embedding.py
+            |        |        |-- transformer_utils.py
+            |        |-- __init__.py
+            |        |-- model.py
+            |        |-- networks.py
+            |-- our_train.py            : code of training model
+            |-- our_valid_mp.py         : code of model validation
+            |-- our_test_mp.py          : code of testing model
 
 
 
