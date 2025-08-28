@@ -72,7 +72,7 @@ The structure of our code folder is:
           config\
                 |-- our_train.json            : code of training setting
                 |-- our_valid_mp.json         : code of validation setting
-                └── our_test_mp.json          : code of test setting
+                └-- our_test_mp.json          : code of test setting
           core\
                 |-- logger.py
                 |-- metrics.py
