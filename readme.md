@@ -59,7 +59,7 @@ The same datasets and source-target splits as [8] are used in this paper, as sum
 
 
 ### Data Preprocessing
-... to be continued ...
+As in [8], we applied a window of [-125, 275] HU for all CT scans and clipped the top 0.5% of the histograms for all MR scans. After that, the CT and MR scans were normalized to zero mean and unit variance. As our experiments were performed on 2D images, each 3D scan was reformatted to 2D slices and then resized to 192×192.
 
 
 ### Data Folder Structure
