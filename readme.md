@@ -46,18 +46,15 @@ All experiments utilize the PyTorch library. We recommend the following package 
 
 
 ## Dataset
-
 ... to be continued ...
 
 
 ### Data Preprocessing
-
 ... to be continued ...
 
 
 ### Data Folder Structure
-
-... to be continued ...
+The structure of our data folder is:
 
 
 
@@ -75,11 +72,11 @@ The structure of our code folder is:
           config\
                 |-- our_train.json            : code of training setting
                 |-- our_valid_mp.json         : code of validation setting
-                |-- our_test_mp.json          : code of test setting
+                └── our_test_mp.json          : code of test setting
           core\
                 |-- logger.py
                 |-- metrics.py
-                |-- wandb_logger.py
+                └── wandb_logger.py
           data\
                 |-- __init__.py
                 |-- image_transforms.py
@@ -88,22 +85,22 @@ The structure of our code folder is:
                 |-- prepare_data.py
                 |-- saliency_balancing_fusion.py
                 |-- transform_utils.py
-                |-- util.py
+                └── util.py
           model\
                 basic_modules\
                       |-- clip_grad_norm.py
                       |-- common.py
-                      |-- misc.py
+                      └── misc.py
                 vqdm_modules\
                       |-- diffusion_transformer.py
                       |-- embedding.py
-                      |-- transformer_utils.py
+                      └── transformer_utils.py
                 |-- __init__.py
                 |-- model.py
-                |-- networks.py
+                └── networks.py
           |-- our_train.py            : code of training model
           |-- our_valid_mp.py         : code of model validation
-          |-- our_test_mp.py          : code of testing model
+          └── our_test_mp.py          : code of testing model
 
 
 
