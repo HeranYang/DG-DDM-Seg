@@ -210,3 +210,4 @@ If you find this code useful for your research, please cite our paper:
 6. G. Litjens, R. Toth, W. Van De Ven, C. Hoeks, S. Kerkstra, B. Van Ginneken, and et al., “Evaluation of prostate segmentation algorithms for MRI: The PROMISE12 challenge,” _Med. Image Anal._, vol. 18, no. 2, pp. 359–373, 2014.
 7. Q. Liu, Q. Dou, and P.-A. Heng, “Shape-aware meta-learning for generalizing prostate MRI segmentation to unseen domains,” in _MICCAI_, pp. 475–485, 2020.
 8. C. Ouyang, C. Chen, S. Li, Z. Li, C. Qin, W. Bai, and D. Rueckert, “Causality-inspired single-source domain generalization for medical image segmentation,” _IEEE Trans. Med. Imaging_, vol. 42, no. 4, pp. 1095–1106, 2022.
+9. The PyTorch implementation of Image Super-Resolution via Iterative Refinement (SR3): https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement.
