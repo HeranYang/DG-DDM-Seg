@@ -53,6 +53,10 @@ We conduct the experiments on three different cross-domain settings, including
 
 The same datasets and source-target splits as [8] are used in this paper, as summarized in table below.
 
+<div align=center>
+<img src="https://github.com/HeranYang/DG-DDM-Seg/blob/main/image/dataset.png" width="500px"/>
+</div>
+
 
 ### Data Preprocessing
 ... to be continued ...
