@@ -14,8 +14,8 @@ Domain shift is a significant challenge in medical image segmentation, primarily
 
 The outline of this readme file is:
 
-    [Overview](#Overview).
-    [Requirements](#Requirements).
+    [Overview](#overview).
+    [Requirements](#requirements).
     Dataset
     Usage
     Citation
