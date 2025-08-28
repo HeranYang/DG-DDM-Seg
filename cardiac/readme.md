@@ -3,39 +3,39 @@ This folder contains the code of DG-DDM-Seg for cross-sequence cardiac segmentat
 The structure of this folder is:
 
     cardiac\            : code of DG-DDM-Seg for cross-sequence cardiac segmentation
-            |-- config\
-            |        |-- our_train.json            : code of training setting
-            |        |-- our_valid_mp.json         : code of validation setting
-            |        |-- our_test_mp.json          : code of test setting
-            |-- core\
-            |        |-- logger.py
-            |        |-- metrics.py
-            |        |-- wandb_logger.py
-            |-- data\
-            |        |-- __init__.py
-            |        |-- image_transforms.py
-            |        |-- location_scale_augmentation.py
-            |        |-- MRI_dataset.py
-            |        |-- prepare_data.py
-            |        |-- saliency_balancing_fusion.py
-            |        |-- transform_utils.py
-            |        |-- util.py
-            |-- dataset\      : data folder
-            |-- model\
-            |        |-- basic_modules\
-            |        |        |-- clip_grad_norm.py
-            |        |        |-- common.py
-            |        |        |-- misc.py
-            |        |-- vqdm_modules\
-            |        |        |-- diffusion_transformer.py
-            |        |        |-- embedding.py
-            |        |        |-- transformer_utils.py
-            |        |-- __init__.py
-            |        |-- model.py
-            |        |-- networks.py
-            |-- our_train.py            : code of training model
-            |-- our_valid_mp.py         : code of model validation
-            |-- our_test_mp.py          : code of testing model
+        |-- config\
+        |        |-- our_train.json            : code of training setting
+        |        |-- our_valid_mp.json         : code of validation setting
+        |        |-- our_test_mp.json          : code of test setting
+        |-- core\
+        |        |-- logger.py
+        |        |-- metrics.py
+        |        |-- wandb_logger.py
+        |-- data\
+        |        |-- __init__.py
+        |        |-- image_transforms.py
+        |        |-- location_scale_augmentation.py
+        |        |-- MRI_dataset.py
+        |        |-- prepare_data.py
+        |        |-- saliency_balancing_fusion.py
+        |        |-- transform_utils.py
+        |        |-- util.py
+        |-- dataset\      : data folder
+        |-- model\
+        |        |-- basic_modules\
+        |        |        |-- clip_grad_norm.py
+        |        |        |-- common.py
+        |        |        |-- misc.py
+        |        |-- vqdm_modules\
+        |        |        |-- diffusion_transformer.py
+        |        |        |-- embedding.py
+        |        |        |-- transformer_utils.py
+        |        |-- __init__.py
+        |        |-- model.py
+        |        |-- networks.py
+        |-- our_train.py            : code of training model
+        |-- our_valid_mp.py         : code of model validation
+        |-- our_test_mp.py          : code of testing model
 
 
 ### Data Folder Structure
