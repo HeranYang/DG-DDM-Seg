@@ -46,7 +46,13 @@ All experiments utilize the PyTorch library. We recommend the following package 
 
 
 ## Dataset
-... to be continued ...
+We conduct the experiments on three different cross-domain settings, including 
+
+1) cross-modality abdominal segmentation on CT [1] and MR [2]
+2) cross-sequence cardiac segmentation from bSSFP MR to LGE MR [37]
+3) cross-site prostate segmentation on MR from six sites [38]–[41]
+
+The same datasets and source-target splits as [14] are used in this paper, as summarized in table below.
 
 
 ### Data Preprocessing
@@ -192,5 +198,5 @@ If you find this code useful for your research, please cite our paper:
 
 
 ## Reference
-
-... to be continued ...
+[1] B. Landman, Z. Xu, J. Igelsias, M. Styner, T. Langerak, and A. Klein, “MICCAI multi-atlas labeling beyond the cranial vault–workshop and challenge,” in MICCAI Multi-Atlas Labeling Beyond Cranial Vault—Workshop Challenge, vol. 5, p. 12, 2015.
+[2] A. E. Kavur, N. S. Gezer, M. Barıs¸, S. Aslan, P.-H. Conze, V. Groza, and et al., “CHAOS challenge-combined (CT-MR) healthy abdominal organ segmentation,” Med. Image Anal., vol. 69, p. 101950, 2021.
