@@ -1,5 +1,5 @@
 ## Usage
-This folder contains the code of DG-DDM-Seg for cross-modality abdominal segmentation.
+This folder contains the code of DG-DDM-Seg for cross-modality abdominal segmentation, which is trained on CT and tested on MR.
 The structure of this folder is:
 
     abdominal_ct2mr\            : code of DG-DDM-Seg for cross-modality abdominal segmentation
