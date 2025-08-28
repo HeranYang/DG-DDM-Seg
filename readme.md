@@ -45,10 +45,10 @@ All experiments utilize the PyTorch library. We recommend the following package 
 
 
 ## Dataset
-We conduct the experiments on three different cross-domain settings, including 
+We conduct the experiments on three different cross-domain settings, including:
 
-1) cross-modality abdominal segmentation on CT [1] and MR [2].
-2) cross-sequence cardiac segmentation from bSSFP MR to LGE MR [3].
+1) cross-modality abdominal segmentation on CT [1] and MR [2],
+2) cross-sequence cardiac segmentation from bSSFP MR to LGE MR [3],
 3) cross-site prostate segmentation on MR from six sites [4]–[7].
 
 The same datasets and source-target splits as [8] are used in this paper, as summarized in table below.
