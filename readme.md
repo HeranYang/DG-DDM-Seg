@@ -55,6 +55,7 @@ All experiments utilize the PyTorch library. We recommend the following package 
 
 ### Data Folder Structure
 The structure of our data folder is:
+
 (here we take abdominal_ct2mr as example)
 
     dataset\    : root data folder  
@@ -112,6 +113,7 @@ We provide the codes of our DG-DDM-Seg respectively for cross-modality abdominal
 Note that the codes for these three tasks are identical except for the hyper-parameters.
 
 The structure of our code folder is: 
+
 (here we take abdominal_ct2mr as example)
 
     abdominal_ct2mr\            : code of DG-DDM-Seg for cross-modality abdominal segmentation
