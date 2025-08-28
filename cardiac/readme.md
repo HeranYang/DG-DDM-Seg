@@ -1,5 +1,5 @@
 ## Usage
-This folder contains the code of DG-DDM-Seg for cross-sequence cardiac segmentation.
+This folder contains the code of DG-DDM-Seg for cross-sequence cardiac segmentation, which is trained on bSSFP MR and tested on LGE MR.
 The structure of this folder is:
 
     cardiac\            : code of DG-DDM-Seg for cross-sequence cardiac segmentation
