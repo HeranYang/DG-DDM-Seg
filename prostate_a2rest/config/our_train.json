@@ -18,7 +18,7 @@
             "name": "train",
             "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
             "output_label_sequence":     "label", // the sequence to be generated
-            "cond_pesudolabel_sequence": "pesudolabel_116/1", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pseudolabel_116/1", // the sequence to be generated
             "dataroot": "dataset/A_to_Rest/train",
             "thres": 0.9,
             "randnum_pl": 116,
@@ -32,7 +32,7 @@
             "name": "valid_train",
             "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
             "output_label_sequence":     "label", // the sequence to be generated
-            "cond_pesudolabel_sequence": "pesudolabel/1", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pseudolabel/1", // the sequence to be generated
             "dataroot": "dataset/A_to_Rest/valid_train",
             "thres": 0.9,
             "randnum_pl": 1,
@@ -102,3 +102,4 @@
         "project": "DG-DDM-Seg for Prostate"
     } // ==============================================================================================
 }
+
