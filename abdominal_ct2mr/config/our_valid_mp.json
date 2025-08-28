@@ -18,7 +18,7 @@
             "name": "train",
             "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
             "output_label_sequence":     "label", // the sequence to be generated
-            "cond_pesudolabel_sequence": "pesudolabel_112/1", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pseudolabel_112/1", // the sequence to be generated
             "dataroot": "dataset/CT_to_MR/train",
             "thres": 0.9,
             "randnum_pl": 112,
@@ -32,7 +32,7 @@
             "name": "valid",
             "cond_image_sequence":       "image", // "all": use all sequences, "trainA": use sequence A to generate other sequence
             "output_label_sequence":     "label", // the sequence to be generated
-            "cond_pesudolabel_sequence": "pesudolabel/1", // the sequence to be generated
+            "cond_pesudolabel_sequence": "pseudolabel/1", // the sequence to be generated
             "dataroot": "dataset/CT_to_MR/valid",
             "thres": 0.9,
             "randnum_pl": 1,
@@ -101,4 +101,5 @@
     "wandb": {
         "project": "DG-DDM-Seg for Abdominal"
     } // ==============================================================================================
+
 }
