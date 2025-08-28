@@ -198,5 +198,7 @@ If you find this code useful for your research, please cite our paper:
 
 
 ## Reference
+
 [1] B. Landman, Z. Xu, J. Igelsias, M. Styner, T. Langerak, and A. Klein, “MICCAI multi-atlas labeling beyond the cranial vault–workshop and challenge,” in MICCAI Multi-Atlas Labeling Beyond Cranial Vault—Workshop Challenge, vol. 5, p. 12, 2015.
+
 [2] A. E. Kavur, N. S. Gezer, M. Barıs¸, S. Aslan, P.-H. Conze, V. Groza, and et al., “CHAOS challenge-combined (CT-MR) healthy abdominal organ segmentation,” Med. Image Anal., vol. 69, p. 101950, 2021.
