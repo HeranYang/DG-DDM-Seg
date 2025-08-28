@@ -202,13 +202,13 @@ If you find this code useful for your research, please cite our paper:
 
 
 ## Reference
-1. B. Landman, Z. Xu, J. Igelsias, M. Styner, T. Langerak, and A. Klein, “MICCAI multi-atlas labeling beyond the cranial vault–workshop and challenge,” in _MICCAI Multi-Atlas Labeling Beyond Cranial Vault—Workshop Challenge_, vol. 5, p. 12, 2015.
-2. A. E. Kavur, N. S. Gezer, M. Barıs¸, S. Aslan, P.-H. Conze, V. Groza, and et al., “CHAOS challenge-combined (CT-MR) healthy abdominal organ segmentation,” _Med. Image Anal._, vol. 69, p. 101950, 2021.
-3. X. Zhuang, J. Xu, X. Luo, C. Chen, C. Ouyang, D. Rueckert, and et al., “Cardiac segmentation on late gadolinium enhancement MRI: A benchmark study from multi-sequence cardiac MR segmentation challenge,” _Med. Image Anal._, vol. 81, p. 102528, 2022.
-4. N. Bloch, A. Madabhushi, H. Huisman, J. Freymann, J. Kirby, M. Grauer, and et al., “NCI-ISBI 2013 challenge: Automated segmentation of prostate structures,” _The Cancer Imaging Archive_, vol. 370, no. 6, p. 5, 2015.
-5. G. Lemaˆıtre, R. Mart´ı, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau, “Computer-aided detection and diagnosis for prostate cancer based on mono and multi-parametric MRI: A review,” _Comput. Biol. Med._, vol. 60, pp. 8–31, 2015.
-6. G. Litjens, R. Toth, W. Van De Ven, C. Hoeks, S. Kerkstra, B. Van Ginneken, and et al., “Evaluation of prostate segmentation algorithms for MRI: The PROMISE12 challenge,” _Med. Image Anal._, vol. 18, no. 2, pp. 359–373, 2014.
-7. Q. Liu, Q. Dou, and P.-A. Heng, “Shape-aware meta-learning for generalizing prostate MRI segmentation to unseen domains,” in _MICCAI_, pp. 475–485, 2020.
-8. C. Ouyang, C. Chen, S. Li, Z. Li, C. Qin, W. Bai, and D. Rueckert, “Causality-inspired single-source domain generalization for medical image segmentation,” _IEEE Trans. Med. Imaging_, vol. 42, no. 4, pp. 1095–1106, 2022.
+1. B. Landman, Z. Xu, J. Igelsias, M. Styner, T. Langerak, and A. Klein, "MICCAI multi-atlas labeling beyond the cranial vault–workshop and challenge", in _MICCAI Multi-Atlas Labeling Beyond Cranial Vault—Workshop Challenge_, vol. 5, p. 12, 2015.
+2. A. E. Kavur, N. S. Gezer, M. Barıs¸, S. Aslan, P.-H. Conze, V. Groza, and et al., "CHAOS challenge-combined (CT-MR) healthy abdominal organ segmentation", _Med. Image Anal._, vol. 69, p. 101950, 2021.
+3. X. Zhuang, J. Xu, X. Luo, C. Chen, C. Ouyang, D. Rueckert, and et al., "Cardiac segmentation on late gadolinium enhancement MRI: A benchmark study from multi-sequence cardiac MR segmentation challenge", _Med. Image Anal._, vol. 81, p. 102528, 2022.
+4. N. Bloch, A. Madabhushi, H. Huisman, J. Freymann, J. Kirby, M. Grauer, and et al., "NCI-ISBI 2013 challenge: Automated segmentation of prostate structures", _The Cancer Imaging Archive_, vol. 370, no. 6, p. 5, 2015.
+5. G. Lemaˆıtre, R. Mart´ı, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau, "Computer-aided detection and diagnosis for prostate cancer based on mono and multi-parametric MRI: A review", _Comput. Biol. Med._, vol. 60, pp. 8–31, 2015.
+6. G. Litjens, R. Toth, W. Van De Ven, C. Hoeks, S. Kerkstra, B. Van Ginneken, and et al., "Evaluation of prostate segmentation algorithms for MRI: The PROMISE12 challenge", _Med. Image Anal._, vol. 18, no. 2, pp. 359–373, 2014.
+7. Q. Liu, Q. Dou, and P.-A. Heng, "Shape-aware meta-learning for generalizing prostate MRI segmentation to unseen domains", in _MICCAI_, pp. 475–485, 2020.
+8. C. Ouyang, C. Chen, S. Li, Z. Li, C. Qin, W. Bai, and D. Rueckert, "Causality-inspired single-source domain generalization for medical image segmentation", _IEEE Trans. Med. Imaging_, vol. 42, no. 4, pp. 1095–1106, 2022.
 9. The PyTorch implementation of "Image Super-Resolution via Iterative Refinement" (SR3): https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement.
 10. The PyTorch implementation of "Vector Quantized Diffusion Model for Text-to-Image Synthesis" (VQ-Diffusion): https://github.com/cientgu/VQ-Diffusion.
