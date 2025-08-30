@@ -187,7 +187,7 @@ Then, you can generate the test results using the following commond:
 
 
 ### About Trained Model
-We have also uploaded our trained DG-DDM-Seg models in the three cross-domain segmentation tasks mentioned above, and one can directly use them for cross-domain image segmentation. Due to the restriction of github, the trained models are uploaded to the [Google Drive](???).
+We have also uploaded our trained DG-DDM-Seg models in the three cross-domain segmentation tasks mentioned above, and one can directly use them for cross-domain image segmentation. Due to the restriction of github, the trained models are uploaded to the [HuggingFace](https://huggingface.co/hryang/DG-DDM-Seg/tree/main).
 
 
 
